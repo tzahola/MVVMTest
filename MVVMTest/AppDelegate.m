@@ -8,7 +8,13 @@
 
 #import "AppDelegate.h"
 
+#import "Model.h"
+#import "ViewModel.h"
+#import "ViewController.h"
+
 @interface AppDelegate ()
+
+@property (nonatomic, strong) Model* model;
 
 @end
 
@@ -16,7 +22,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.model = [Model new];
+    
+    self.window = [UIWindow new];
+    
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle bundleForClass:[self class]]];
+    UINavigationController* navigationController = [storyboard instantiateInitialViewController];
+    ViewController* viewController = (ViewController*)navigationController.topViewController;
+    viewController.viewModel = [[ViewModel alloc] initWithModel:self.model];
+    
+    [self.window makeKeyAndVisible];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    self.window.rootViewController = navigationController;
+    
     return YES;
 }
 

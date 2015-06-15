@@ -14,6 +14,8 @@
 		E2FAB8801B2C88B100AB352E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2FAB87F1B2C88B100AB352E /* Images.xcassets */; };
 		E2FAB8831B2C88B100AB352E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2FAB8811B2C88B100AB352E /* LaunchScreen.xib */; };
 		E2FAB88F1B2C88B100AB352E /* MVVMTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FAB88E1B2C88B100AB352E /* MVVMTestTests.m */; };
+		E2FAB89A1B2C88EA00AB352E /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FAB8991B2C88EA00AB352E /* Model.m */; };
+		E2FAB89D1B2F71D600AB352E /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FAB89C1B2F71D600AB352E /* ViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		E2FAB8881B2C88B100AB352E /* MVVMTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FAB88D1B2C88B100AB352E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2FAB88E1B2C88B100AB352E /* MVVMTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMTestTests.m; sourceTree = "<group>"; };
+		E2FAB8981B2C88EA00AB352E /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		E2FAB8991B2C88EA00AB352E /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		E2FAB89B1B2F71D600AB352E /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		E2FAB89C1B2F71D600AB352E /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,10 @@
 			children = (
 				E2FAB8761B2C88B100AB352E /* AppDelegate.h */,
 				E2FAB8771B2C88B100AB352E /* AppDelegate.m */,
+				E2FAB8981B2C88EA00AB352E /* Model.h */,
+				E2FAB8991B2C88EA00AB352E /* Model.m */,
+				E2FAB89B1B2F71D600AB352E /* ViewModel.h */,
+				E2FAB89C1B2F71D600AB352E /* ViewModel.m */,
 				E2FAB8791B2C88B100AB352E /* ViewController.h */,
 				E2FAB87A1B2C88B100AB352E /* ViewController.m */,
 				E2FAB87C1B2C88B100AB352E /* Main.storyboard */,
@@ -221,7 +231,9 @@
 			files = (
 				E2FAB87B1B2C88B100AB352E /* ViewController.m in Sources */,
 				E2FAB8781B2C88B100AB352E /* AppDelegate.m in Sources */,
+				E2FAB89D1B2F71D600AB352E /* ViewModel.m in Sources */,
 				E2FAB8751B2C88B100AB352E /* main.m in Sources */,
+				E2FAB89A1B2C88EA00AB352E /* Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
