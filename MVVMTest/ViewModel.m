@@ -40,14 +40,10 @@
             queue:nil
             usingBlock:^(NSNotification *note) {
                 
-                NSInteger operand1 = model.operand1;
-                NSInteger operand2 = model.operand2;
-                NSInteger sum = model.sum;
-                
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    weakSelf.operand1 = operand1;
-                    weakSelf.operand2 = operand2;
-                    weakSelf.sum = sum;
+                    weakSelf.operand1 = model.operand1;
+                    weakSelf.operand2 = model.operand2;
+                    weakSelf.sum = model.sum;
                     
                     NSAssert(weakSelf.operand1 + weakSelf.operand2 == weakSelf.sum, @"Inconsistent state!");
                 });
